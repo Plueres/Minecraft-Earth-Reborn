@@ -1,0 +1,22 @@
+{
+    "format_version": 2,
+    "header": {
+      "name": "Muddy Pig Variation",
+      "description": "§2Java pack§r by §c[name]§r | §7Bedrock port§r by §6_Rickname_§r\n§9§lBedrock §gArchaeology§r",
+      "uuid": "5454098a-e409-4658-9cc0-f550925b9983",
+      "version": [1,0,0],
+      "min_engine_version": [1,16,0]
+    },
+    "modules": [
+      {
+        "type": "resources",
+        "uuid": "e2dd5dee-bdf6-4b09-876e-853b8787856c",
+        "version": [1,0,0]
+      }
+    ],
+    "metadata": {
+      "authors": [
+        "_Rickname_"
+      ]
+    }
+  }
