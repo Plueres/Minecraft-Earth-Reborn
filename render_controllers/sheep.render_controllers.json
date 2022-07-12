@@ -12,7 +12,14 @@
         "textures": {
           "Array.SSskins": [
             "Texture.default",
-            "Texture.horned"
+            "Texture.default",
+            "Texture.flecked",
+            "Texture.fuzzy",
+            "Texture.inky",
+            "Texture.long_nosed",
+            "Texture.patched",
+            "Texture.rainbow",
+            "Texture.rocky"
           ]
         }
       },
@@ -37,7 +44,14 @@
         "textures": {
           "Array.Hskins": [
             "Texture.none",
-            "Texture.horns"
+            "Texture.horns",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none"
           ]
         }
       },

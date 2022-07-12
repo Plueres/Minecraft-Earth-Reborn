@@ -10,9 +10,15 @@
       },
       "textures": {
         "default": "textures/entity/sheep/sheep",
-        "horned": "textures/entity/sheep/horned_sheep",
         "horns": "textures/entity/sheep/horns",
-        "none": "textures/entity/llama/decor/decor_none"
+        "none": "textures/entity/llama/decor/decor_none",
+        "flecked": "textures/entity/sheep/flecked_sheep",
+        "fuzzy": "textures/entity/sheep/fuzzy_sheep",
+        "inky": "textures/entity/sheep/inky_sheep",
+        "long_nosed": "textures/entity/sheep/long_nosed_sheep",
+        "patched": "textures/entity/sheep/patched_sheep",
+        "rainbow": "textures/entity/sheep/rainbow_sheep",
+        "rocky": "textures/entity/sheep/rocky_sheep"
       },
       "geometry": {
         "default": "geometry.sheep.v1.8",
@@ -38,7 +44,7 @@
         ],
         "initialize": [
           "variable.overlay_color = 0;",
-          "variable.Svar = Math.random(0,2);"
+          "variable.Svar = Math.random(0,8);"
         ]
       },
       "render_controllers": [

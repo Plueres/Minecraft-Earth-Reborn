@@ -113,6 +113,61 @@
 			}
 		]
 	},
+	"geometry.rainbow_sheep.v1.8": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3.375,
+		"visible_bounds_offset": [0, 1.3125, 0],
+		"bones": [
+			{
+				"name": "head",
+				"pivot": [0, 18, -8],
+				"cubes": [
+					{"origin": [-4, 16, -13], "size": [8, 8, 8], "uv": [32, 0], "inflate": 0.6}
+				]
+			},
+			{
+				"name": "body",
+				"pivot": [0, 19, 2],
+				"cubes": [
+					{"origin": [-6, 12, -6], "size": [12, 19, 9], "uv": [0, 36], "inflate": 1.75}
+				]
+			},
+			{
+				"name": "leg0",
+				"parent": "body",
+				"pivot": [-3, 12, 7],
+				"cubes": [
+					{"origin": [-5.5, 5, 5], "size": [5, 7, 6], "uv": [42, 42], "inflate": 0.5}
+				]
+			},
+			{
+				"name": "leg1",
+				"parent": "body",
+				"pivot": [3, 12, 7],
+				"cubes": [
+					{"origin": [0.5, 5, 5], "size": [5, 7, 6], "uv": [42, 42], "inflate": 0.5}
+				]
+			},
+			{
+				"name": "leg2",
+				"parent": "body",
+				"pivot": [-3, 12, -5],
+				"cubes": [
+					{"origin": [-5.5, 5, -7], "size": [5, 7, 6], "uv": [41, 29], "inflate": 0.5}
+				]
+			},
+			{
+				"name": "leg3",
+				"parent": "body",
+				"pivot": [3, 12, -5],
+				"cubes": [
+					{"origin": [0.5, 5, -7], "size": [5, 7, 6], "uv": [41, 29], "inflate": 0.5}
+				]
+			}
+		]
+	},
 	"geometry.sheep.horned.v1.8": {
 		"texturewidth": 50,
 		"textureheight": 13,
