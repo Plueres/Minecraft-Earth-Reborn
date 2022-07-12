@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.sheep": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": [
+            "Geometry.default",
+            "Geometry.sheared"
+          ]
+        },
+        "textures": {
+          "Array.SSskins": [
+            "Texture.default",
+            "Texture.horned"
+          ]
+        }
+      },
+      "geometry": "Array.geos[query.is_sheared]",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.SSskins[variable.Svar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.overlay_color>0 ? 1.0 : -1.0)",
+        "g": "(variable.overlay_color>0 ? 1.0 : -1.0)",
+        "b": "(variable.overlay_color>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.overlay_color)/20*0.15"
+      }
+    },
+    "controller.render.sheep_horned": {
+      "arrays": {
+        "textures": {
+          "Array.Hskins": [
+            "Texture.none",
+            "Texture.horns"
+          ]
+        }
+      },
+      "geometry": "Geometry.horns",
+      "materials": [
+        {
+          "*": "Material.transparent"
+        }
+      ],
+      "textures": [
+        "Array.Hskins[variable.Svar]"
+      ]
+    }
+  }
+}

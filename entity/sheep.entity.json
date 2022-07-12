@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:sheep",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "sheep",
+        "transparent": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/sheep/sheep",
+        "horned": "textures/entity/sheep/horned_sheep",
+        "horns": "textures/entity/sheep/horns",
+        "none": "textures/entity/llama/decor/decor_none"
+      },
+      "geometry": {
+        "default": "geometry.sheep.v1.8",
+        "sheared": "geometry.sheep.sheared.v1.8",
+        "horns" : "geometry.sheep.horned.v1.8"
+      },
+      "animations": {
+        "setup": "animation.sheep.setup",
+        "grazing": "animation.sheep.grazing",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.sheep.baby_transform",
+        "move": "controller.animation.sheep.move"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          "look_at_target",
+          "move",
+          {
+            "baby_transform": "query.is_baby"
+          }
+        ],
+        "initialize": [
+          "variable.overlay_color = 0;",
+          "variable.Svar = Math.random(0,2);"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.sheep",
+        "controller.render.sheep_horned"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 3
+      }
+    }
+  }
+}
