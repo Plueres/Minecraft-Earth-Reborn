@@ -4,13 +4,73 @@
     "controller.render.pig": {
       "arrays": {
         "textures": {
-          "Array.skins": [ "Texture.default", "Texture.saddled" ],
-          "Array.varSkins": [ "Texture.default", "Texture.muddy "]
+          "Array.varSkins": [
+            "Texture.default",
+            "Texture.muddy",
+            "Texture.dried_muddy" ,
+            "Texture.molted",
+            "Texture.pale",
+            "Texture.piebald",
+            "Texture.pink_footed",
+            "Texture.sooty",
+            "Texture.spotted"
+          ]
         }
       },
       "geometry": "Geometry.default",
-      "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Array.varSkins[variable.Svar]", "Array.skins[query.is_saddled]" ]
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.varSkins[variable.Svar]"
+      ]
+    },
+    "controller.render.pig_muddy": {
+      "arrays": {
+        "textures": {
+          "Array.Mskins": [
+            "Texture.none",
+            "Texture.muddy",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none"
+          ]
+        }
+      },
+      "geometry": "Geometry.muddy_top",
+      "materials": [
+        {
+          "*": "Material.transparent"
+        }
+      ],
+      "textures": [
+        "Array.Mskins[variable.Svar]"
+      ]
+    },
+    "controller.render.pig_saddle": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.none",
+            "Texture.saddled"
+          ]
+        }
+      },
+      "geometry": "Geometry.saddled",
+      "materials": [
+        {
+          "*": "Material.transparent"
+        }
+      ],
+      "textures": [
+        "Array.skins[query.is_saddled]"
+      ]
     }
   }
 }
