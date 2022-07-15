@@ -39,6 +39,38 @@
         "a": "math.abs(variable.overlay_color)/20*0.15"
       }
     },
+    "controller.render.sheep_rainbow": {
+      "arrays": {
+        "geometries": {
+          "Array.geos": [
+            "Geometry.rainbow_sheep",
+            "Geometry.sheared"
+          ]
+        },
+        "textures": {
+          "Array.Sskins": [
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.rainbow_wool",
+            "Texture.none"
+          ]
+        }
+      },
+      "geometry": "Array.geos[query.is_sheared]",
+      "materials": [
+        {
+          "*": "Material.transparent"
+        }
+      ],
+      "textures": [
+        "Array.Sskins[variable.Svar]"
+      ]
+    },
     "controller.render.sheep_horned": {
       "arrays": {
         "textures": {

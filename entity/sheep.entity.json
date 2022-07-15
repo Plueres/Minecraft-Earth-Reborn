@@ -18,12 +18,14 @@
         "long_nosed": "textures/entity/sheep/long_nosed_sheep",
         "patched": "textures/entity/sheep/patched_sheep",
         "rainbow": "textures/entity/sheep/rainbow_sheep",
+        "rainbow_wool": "textures/entity/sheep/rainbow_sheep_wool",
         "rocky": "textures/entity/sheep/rocky_sheep"
       },
       "geometry": {
         "default": "geometry.sheep.v1.8",
         "sheared": "geometry.sheep.sheared.v1.8",
-        "horns" : "geometry.sheep.horned.v1.8"
+        "horns" : "geometry.sheep.horned.v1.8",
+        "rainbow_sheep" : "geometry.rainbow_sheep.v1.8"
       },
       "animations": {
         "setup": "animation.sheep.setup",
@@ -49,7 +51,8 @@
       },
       "render_controllers": [
         "controller.render.sheep",
-        "controller.render.sheep_horned"
+        "controller.render.sheep_horned",
+        "controller.render.sheep_rainbow"
       ],
       "spawn_egg": {
         "texture": "spawn_egg",
