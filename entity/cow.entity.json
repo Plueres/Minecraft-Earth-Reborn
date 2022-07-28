@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:cow",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "cow",
+        "transparent": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/cow/cow",
+        "albino": "textures/entity/cow/cow_albino",
+        "ashen": "textures/entity/cow/cow_ashen",
+        "cookie": "textures/entity/cow/cow_cookie",
+        "cream": "textures/entity/cow/cow_cream",
+        "dairy": "textures/entity/cow/cow_dairy",
+        "moobloom": "textures/entity/cow/cow_moobloom",
+        "moolip": "textures/entity/cow/cow_moolip",
+        "pinto": "textures/entity/cow/cow_pinto",
+        "sunset": "textures/entity/cow/cow_sunset",
+        "umbra": "textures/entity/cow/cow_umbra",
+        "wooly": "textures/entity/cow/cow_wooly"
+      },
+      "geometry": {
+        "default": "geometry.cow.v1.8",
+        "moobloom": "geometry.cow.moobloom.v1.8",
+        "woolly": "geometry.cow.woolly.v1.8"
+      },
+      "animations": {
+        "setup": "animation.cow.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.cow.baby_transform"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          {
+            "walk": "query.modified_move_speed"
+          },
+          "look_at_target",
+          {
+            "baby_transform": "query.is_baby"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cow",
+        "controller.render.cow_accessories"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

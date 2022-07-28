@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cow": {
+      "arrays": {
+        "textures": {
+          "Array.varSkins": [
+            "Texture.default",
+            "Texture.albino",
+            "Texture.ashen",
+            "Texture.cookie",
+            "Texture.cream",
+            "Texture.diary",
+            "Texture.moobloom",
+            "Texture.moolip",
+            "Texture.pinto",
+            "Texture.sunset",
+            "Texture.umbra",
+            "Texture.wooly"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.cow_accessories": {
+      "arrays": {
+        "textures": {
+          "Array.varSkins": [
+            "Texture.default",
+            "Texture.albino",
+            "Texture.ashen",
+            "Texture.molted",
+            "Texture.pale",
+            "Texture.piebald",
+            "Texture.pink_footed",
+            "Texture.sooty",
+            "Texture.spotted"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.transparent"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    }
+  }
+}
