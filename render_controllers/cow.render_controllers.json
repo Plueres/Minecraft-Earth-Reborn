@@ -10,7 +10,7 @@
             "Texture.ashen",
             "Texture.cookie",
             "Texture.cream",
-            "Texture.diary",
+            "Texture.dairy",
             "Texture.moobloom",
             "Texture.moolip",
             "Texture.pinto",
@@ -27,33 +27,36 @@
         }
       ],
       "textures": [
-        "Texture.default"
+        "Array.varSkins[variable.Svar]"
       ]
     },
     "controller.render.cow_accessories": {
       "arrays": {
         "textures": {
           "Array.varSkins": [
-            "Texture.default",
-            "Texture.albino",
-            "Texture.ashen",
-            "Texture.molted",
-            "Texture.pale",
-            "Texture.piebald",
-            "Texture.pink_footed",
-            "Texture.sooty",
-            "Texture.spotted"
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.none",
+            "Texture.moobloom",
+            "Texture.moolip",
+            "Texture.none",
+            "Texture.none",
+            "Texture.umbra",
+            "Texture.wooly"
           ]
         }
       },
-      "geometry": "Geometry.default",
+      "geometry": "Geometry.other",
       "materials": [
         {
-          "*": "Material.transparent"
+          "*": "Material.default"
         }
       ],
       "textures": [
-        "Texture.default"
+        "Array.varSkins[variable.Svar]"
       ]
     }
   }

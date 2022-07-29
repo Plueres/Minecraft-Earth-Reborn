@@ -5,27 +5,26 @@
       "identifier": "minecraft:cow",
       "min_engine_version": "1.8.0",
       "materials": {
-        "default": "cow",
-        "transparent": "skeleton"
+        "default": "skeleton"
       },
       "textures": {
         "default": "textures/entity/cow/cow",
-        "albino": "textures/entity/cow/cow_albino",
-        "ashen": "textures/entity/cow/cow_ashen",
-        "cookie": "textures/entity/cow/cow_cookie",
-        "cream": "textures/entity/cow/cow_cream",
-        "dairy": "textures/entity/cow/cow_dairy",
-        "moobloom": "textures/entity/cow/cow_moobloom",
-        "moolip": "textures/entity/cow/cow_moolip",
-        "pinto": "textures/entity/cow/cow_pinto",
-        "sunset": "textures/entity/cow/cow_sunset",
-        "umbra": "textures/entity/cow/cow_umbra",
-        "wooly": "textures/entity/cow/cow_wooly"
+        "albino": "textures/entity/cow/albino_cow",
+        "ashen": "textures/entity/cow/ashen_cow",
+        "cookie": "textures/entity/cow/cookie_cow",
+        "cream": "textures/entity/cow/cream_cow",
+        "dairy": "textures/entity/cow/dairy_cow",
+        "moobloom": "textures/entity/cow/moo_bloom",
+        "moolip": "textures/entity/cow/moolip",
+        "pinto": "textures/entity/cow/pinto_cow",
+        "sunset": "textures/entity/cow/sunset_cow",
+        "umbra": "textures/entity/cow/umbra_cow",
+        "wooly": "textures/entity/cow/wooly_cow",
+        "none": "textures/entity/llama/decor/decor_none"
       },
       "geometry": {
         "default": "geometry.cow.v1.8",
-        "moobloom": "geometry.cow.moobloom.v1.8",
-        "woolly": "geometry.cow.woolly.v1.8"
+        "other": "geometry.cow_accessories.v1.8"
       },
       "animations": {
         "setup": "animation.cow.setup",
@@ -43,6 +42,9 @@
           {
             "baby_transform": "query.is_baby"
           }
+        ],
+        "initialize": [
+          "variable.Svar = Math.random(0,12);"
         ]
       },
       "render_controllers": [
