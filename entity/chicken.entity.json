@@ -5,11 +5,18 @@
       "identifier": "minecraft:chicken",
       "min_engine_version": "1.12.0",
       "materials": {
-        "default": "chicken",
-        "legs": "chicken_legs"
+        "default": "chicken_legs"
       },
       "textures": {
-        "default": "textures/entity/chicken"
+        "default": "textures/entity/chicken/chicken",
+        "amber": "textures/entity/chicken/amber_chicken",
+        "bronzed": "textures/entity/chicken/bronzed_chicken",
+        "cluckshroom": "textures/entity/chicken/cluck_shroom",
+        "fancy": "textures/entity/chicken/fancy_chicken",
+        "gold_crested": "textures/entity/chicken/gold_crested_chicken",
+        "midnight": "textures/entity/chicken/midnight_chicken",
+        "skewbald": "textures/entity/chicken/skewbald_chicken",
+        "stormy": "textures/entity/chicken/stormy_chicken"
       },
       "geometry": {
         "default": "geometry.chicken.v1.12",
@@ -37,7 +44,8 @@
         ]
       },
       "render_controllers": [
-        "controller.render.chicken"
+        "controller.render.chicken",
+        "controller.render.chicken_accessories"
       ]
     }
   }

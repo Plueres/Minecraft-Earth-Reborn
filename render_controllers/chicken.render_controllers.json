@@ -20,10 +20,7 @@
       "geometry": "geometry.default",
       "materials": [
         {
-          "*": "Material.default"
-        },
-        {
-          "leg*": "Material.legs"
+          "*": "Material.legs"
         }
       ],
       "textures": [
