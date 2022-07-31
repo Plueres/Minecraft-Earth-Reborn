@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.chicken.v1.12",
+				"identifier": "geometry.chicken_acc.v1.12",
 				"texture_width": 64,
 				"texture_height": 32,
 				"visible_bounds_width": 3,
@@ -40,31 +40,6 @@
 					"cubes": [
 						{"origin": [-0.5, 9, -7], "size": [1, 2, 2], "uv": [18, 11]}
 					]
-				},
-				{
-					"name": "beak",
-					"parent": "head",
-					"pivot": [0, 9, -4]
-				},
-				{
-					"name": "leg0",
-					"pivot": [-2, 5, 1]
-				},
-				{
-					"name": "leg1",
-					"pivot": [1, 5, 1]
-				},
-				{
-					"name": "wing0",
-					"pivot": [-3, 11, 0]
-				},
-				{
-					"name": "wing1",
-					"pivot": [3, 11, 0]
-				},
-				{
-					"name": "tail",
-					"pivot": [0, 0, 0]
 				}
 			]
 		}

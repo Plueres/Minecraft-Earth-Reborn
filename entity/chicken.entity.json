@@ -12,7 +12,8 @@
         "default": "textures/entity/chicken"
       },
       "geometry": {
-        "default": "geometry.chicken.v1.12"
+        "default": "geometry.chicken.v1.12",
+        "accessories": "geometry.chicken_accessories.v1.12"
       },
       "animations": {
         "move": "animation.chicken.move",
@@ -23,12 +24,21 @@
       "scripts": {
         "animate": [
           "general",
-          { "move": "query.modified_move_speed" },
+          {
+            "move": "query.modified_move_speed"
+          },
           "look_at_target",
-          { "baby_transform": "query.is_baby" }
+          {
+            "baby_transform": "query.is_baby"
+          }
+        ],
+        "initialize": [
+          "variable.Svar = Math.random(0,8);"
         ]
       },
-      "render_controllers": [ "controller.render.chicken" ]
+      "render_controllers": [
+        "controller.render.chicken"
+      ]
     }
   }
 }
