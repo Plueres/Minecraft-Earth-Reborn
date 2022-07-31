@@ -50,11 +50,7 @@
       "render_controllers": [
         "controller.render.cow",
         "controller.render.cow_accessories"
-      ],
-      "spawn_egg": {
-        "texture": "spawn_egg",
-        "texture_index": 1
-      }
+      ]
     }
   }
 }

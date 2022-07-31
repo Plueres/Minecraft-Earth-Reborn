@@ -53,11 +53,7 @@
         "controller.render.sheep",
         "controller.render.sheep_horned",
         "controller.render.sheep_rainbow"
-      ],
-      "spawn_egg": {
-        "texture": "spawn_egg",
-        "texture_index": 3
-      }
+      ]
     }
   }
 }

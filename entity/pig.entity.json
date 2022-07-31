@@ -51,11 +51,7 @@
         "controller.render.pig",
         "controller.render.pig_muddy",
         "controller.render.pig_saddle"
-      ],
-      "spawn_egg": {
-        "texture": "spawn_egg",
-        "texture_index": 2
-      }
+      ]
     }
   }
 }
