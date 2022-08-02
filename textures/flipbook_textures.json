@@ -1,0 +1,24 @@
+[
+    {
+        "flipbook_texture": "textures/blocks/mud_flow",
+        "atlas_tile": "flowing_mud",
+        "ticks_per_frame": 10,
+        "replicate": 2
+    },
+    {
+        "flipbook_texture": "textures/blocks/mud_still",
+        "atlas_tile": "still_mud",
+        "ticks_per_frame": 16
+    },
+    {
+        "flipbook_texture": "textures/blocks/muddy_mangrove_roots_side",
+        "atlas_tile": "muddy_mangrove_roots_side",
+        "ticks_per_frame": 10,
+        "replicate": 2
+    },
+    {
+        "flipbook_texture": "textures/blocks/muddy_mangrove_roots_top",
+        "atlas_tile": "muddy_mangrove_roots_top",
+        "ticks_per_frame": 16
+    }
+]

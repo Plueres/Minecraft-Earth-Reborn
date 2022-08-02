@@ -1,0 +1,18 @@
+{
+    "mud": {
+        "textures": {
+            "up": "still_mud",
+            "down": "still_mud",
+            "side": "flowing_mud"
+        },
+        "carried_textures": "bucket_mud",
+        "blockshape": "water"
+    },
+    "muddy_mangrove_roots": {
+        "textures": {
+            "up": "muddy_mangrove_roots_top",
+            "down": "muddy_mangrove_roots_top",
+            "side": "muddy_mangrove_roots_side"
+        }
+    }
+}

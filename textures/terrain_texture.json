@@ -1,0 +1,25 @@
+{
+    "resource_pack_name": "mce mud",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "still_mud": {
+            "textures": "textures/blocks/mud_still"
+        },
+        "flowing_mud": {
+            "quad": 1,
+            "textures": "textures/blocks/mud_flow"
+        },
+        "muddy_mangrove_roots_top": {
+            "textures": "textures/blocks/muddy_mangrove_roots_top"
+        },
+        "muddy_mangrove_roots_side": {
+            "quad": 1,
+            "textures": "textures/blocks/muddy_mangrove_roots_side"
+        },
+        "bucket_mud": {
+            "textures": "textures/blocks/bucket_mud"
+        }
+    }
+}
