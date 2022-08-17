@@ -14,6 +14,23 @@
         "version": [1,0,0]
       }
     ],
+    "subpacks": [
+      {
+        "folder_name": "All",
+        "name": "All features of Minecraft Earth Reborn Enabled",
+        "memory_tier": 1
+      },
+      {
+        "folder_name": "UI-only",
+        "name": "Only have the UI of this pack enabled. This includes the general UI and touch controls, this excludes the mobs",
+        "memory_tier": 1
+      },
+      {
+        "folder_name": "Touch Controls-only",
+        "name": "Only have the touch controls enabled. This excludes the mobs and general UI",
+        "memory_tier": 1
+      }
+    ],
     "metadata": {
       "authors": [
         "_Rickname_"

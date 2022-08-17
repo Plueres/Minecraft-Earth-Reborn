@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.wolf": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "query.is_angry ? Texture.angry : Texture.enderman"
+      ]
+    },
+    "controller.render.wolf_colar": {
+      "geometry": "Geometry.colar",
+      "materials": [
+        {
+          "*": "Material.colar"
+        }
+      ],
+      "part_visibility": [
+        {
+          "upperBody": "query.has_owner"
+        }
+      ],
+      "textures": [
+        "Texture.colar"
+      ]
+    }
+  }
+}

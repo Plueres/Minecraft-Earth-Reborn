@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"geometry.wolf_colar": {
+		"texturewidth": 64,
+		"textureheight": 32,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [0, 1, 0],
+		"bones": [
+			{
+				"name": "head",
+				"pivot": [-1, 10.5, -7],
+				"locators": {
+					"lead": [-1, 10.5, -7]
+				}
+			},
+			{
+				"name": "upperBody",
+				"pivot": [-1, 10, 2],
+				"cubes": [
+					{"origin": [-5, 12, -1], "size": [8, 1, 7], "uv": [21, 0], "inflate": 0.1}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,135 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.llama": {
+      "arrays": {
+        "textures": {
+          "Array.base": [
+            "Texture.creamy",
+            "Texture.white",
+            "Texture.brown",
+            "Texture.gray"
+          ],
+          "Array.decor": [
+            "Texture.decor_none",
+            "Texture.decor_white",
+            "Texture.decor_orange",
+            "Texture.decor_magenta",
+            "Texture.decor_light_blue",
+            "Texture.decor_yellow",
+            "Texture.decor_lime",
+            "Texture.decor_pink",
+            "Texture.decor_gray",
+            "Texture.decor_silver",
+            "Texture.decor_cyan",
+            "Texture.decor_purple",
+            "Texture.decor_blue",
+            "Texture.decor_brown",
+            "Texture.decor_green",
+            "Texture.decor_red",
+            "Texture.decor_black"
+          ]
+        }
+      },
+      "geometry": "query.is_name_any('Jolly', 'jolly', 'Jolly Llama', 'Jolly llama', 'JOLLY LLAMA', 'jolly llama') ? Geometry.jolly : Geometry.default",
+      "part_visibility": [
+        {
+          "chest*": "query.is_chested"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "query.is_name_any('Jolly', 'jolly', 'Jolly Llama', 'Jolly llama', 'JOLLY LLAMA', 'jolly llama') ? Texture.jolly : Array.base[query.variant]",
+        "(query.mark_variant == 1 && variable.DecorTextureIndex == 0) ? Texture.decor_wandering_trader : (query.is_name_any('Jolly', 'jolly', 'Jolly Llama', 'Jolly llama', 'JOLLY LLAMA', 'jolly llama') ? Texture.decor_none : Array.decor[variable.DecorTextureIndex])",
+        "Texture.decor_none"
+      ]
+    },
+    "controller.render.llama_trader": {
+      "arrays": {
+        "textures": {
+          "Array.base": [
+            "Texture.creamy",
+            "Texture.white",
+            "Texture.brown",
+            "Texture.gray"
+          ],
+          "Array.decor": [
+            "Texture.decor_none",
+            "Texture.decor_white",
+            "Texture.decor_orange",
+            "Texture.decor_magenta",
+            "Texture.decor_light_blue",
+            "Texture.decor_yellow",
+            "Texture.decor_lime",
+            "Texture.decor_pink",
+            "Texture.decor_gray",
+            "Texture.decor_silver",
+            "Texture.decor_cyan",
+            "Texture.decor_purple",
+            "Texture.decor_blue",
+            "Texture.decor_brown",
+            "Texture.decor_green",
+            "Texture.decor_red",
+            "Texture.decor_black"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        {
+          "chest*": "query.is_chested"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.base[query.variant]",
+        "(query.mark_variant == 1 && variable.DecorTextureIndex == 0) ? Texture.decor_wandering_trader : Array.decor[variable.DecorTextureIndex]",
+        "Texture.decor_none"
+      ]
+    },
+    "controller.render.llama_jolly_decor": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.decor_none",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor",
+            "Texture.jolly_decor"
+          ]
+        }
+      },
+      "geometry": "query.is_name_any('Jolly', 'jolly', 'Jolly Llama', 'Jolly llama', 'JOLLY LLAMA', 'jolly llama') ? Geometry.jolly_decor : Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.decor_none",
+        "query.is_name_any('Jolly', 'jolly', 'Jolly Llama', 'Jolly llama', 'JOLLY LLAMA', 'jolly llama') ? Array.decor[variable.DecorTextureIndex] : Texture.decor_none",
+        "Texture.decor_none"
+      ]
+    }
+  }
+}
