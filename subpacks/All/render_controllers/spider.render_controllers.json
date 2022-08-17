@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spider": {
+      "arrays": {
+        "materials": {
+          "Array.materials": [
+            "Material.default",
+            "Material.invisible"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Array.materials[query.is_invisible]"
+        }
+      ],
+      "textures": [
+        "query.is_name_any('bone', 'Bone', 'BONE', 'bone spider', 'Bone Spider', 'Bone spider', 'bone Spider', 'BONE SPIDER') ? Texture.bone : Texture.default"
+      ]
+    }
+  }
+}

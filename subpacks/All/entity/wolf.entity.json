@@ -12,8 +12,7 @@
         "angry": "textures/entity/wolf/wolf_angry",
         "skeleton_default": "textures/entity/wolf/skeleton_wolf",
         "skeleton_angry": "textures/entity/wolf/skeleton_wolf_angry",
-        "colar": "textures/entity/wolf/colar",
-        "enderman": "textures/entity/enderman/enderman"
+        "colar": "textures/entity/wolf/colar"
       },
       "geometry": {
         "default": "geometry.wolf",

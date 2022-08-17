@@ -9,7 +9,7 @@
         }
       ],
       "textures": [
-        "query.is_angry ? Texture.angry : Texture.enderman"
+        "(query.is_name_any('skeleton', 'Skeleton', 'SKELETON', 'skeleton wolf', 'Skeleton Wolf', 'Skeleton wolf', 'skeleton Wolf', 'SKELETON WOLF') && q.is_angry ) ? Texture.skeleton_angry : (query.is_name_any('skeleton', 'Skeleton', 'SKELETON', 'skeleton wolf', 'Skeleton Wolf', 'Skeleton wolf', 'skeleton Wolf', 'SKELETON WOLF') ? Texture.skeleton_default : (query.is_angry ? Texture.angry : Texture.default))"
       ]
     },
     "controller.render.wolf_colar": {
