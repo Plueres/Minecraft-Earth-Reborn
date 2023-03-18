@@ -16,13 +16,18 @@
     ],
     "subpacks": [
       {
+        "folder_name": "All",
+        "name": "Have all features of this pack enabled. This includes the general UI and touch controls and all changes to the blocks",
+        "memory_tier": 1
+      },
+      {
         "folder_name": "UI-only",
-        "name": "Only have the UI of this pack enabled. This includes the general UI and touch controls, this excludes the mobs",
+        "name": "Only have the UI of this pack enabled. This includes the general UI and touch controls",
         "memory_tier": 1
       },
       {
         "folder_name": "Touch Controls-only",
-        "name": "Only have the touch controls enabled. This excludes the mobs and general UI",
+        "name": "Only have the touch controls enabled. This excludes general UI and blocks",
         "memory_tier": 1
       }
     ],
